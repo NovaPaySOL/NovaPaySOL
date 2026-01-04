@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+  /* Core */
+  --bg: 6 6 7;            /* deep black */
+  --card: 14 14 15;       /* charcoal */
+  --text: 245 245 245;    /* near-white */
+  --muted: 160 160 160;   /* muted gray */
+  --border: 42 42 42;     /* subtle borders */
+
+  /* Black + Orange */
+  --accent: 255 138 0;    /* orange */
+  --accent2: 255 176 64;  /* softer orange */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body { height: 100%; }
+body{
+  margin: 0;
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Helpers (Tailwind v4-safe: no @apply) */
+.containerX{
+  width: 100%;
+  max-width: 72rem; /* ~ max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.card{
+  border-radius: 1rem;
+  border: 1px solid rgb(var(--border));
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.muted{ color: rgb(var(--muted)); }
+
+.pill{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--border));
+  padding: .25rem .75rem;
+  font-size: .75rem;
+  background: rgba(255,255,255,0.03);
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .75rem;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  font-weight: 800;
+  transition: transform .15s ease, background .15s ease, opacity .15s ease, box-shadow .15s ease;
+}
+.btn:active{ transform: scale(.99); }
+
+.btnPrimary{
+  background: linear-gradient(135deg, rgb(var(--accent)) 0%, rgb(var(--accent2)) 100%);
+  color: #000;
+  box-shadow: 0 10px 30px rgba(255,138,0,0.18);
+}
+.btnPrimary:hover{
+  box-shadow: 0 12px 34px rgba(255,138,0,0.28);
+}
+
+.btnGhost{
+  border: 1px solid rgb(var(--border));
+  background: rgba(255,255,255,0.05);
+  color: rgb(var(--text));
+}
+.btnGhost:hover{
+  background: rgba(255,255,255,0.10);
+}
+
+/* Wallet button theme */
+.wallet-adapter-button{
+  border-radius: .75rem !important;
+  border: 1px solid rgb(var(--border)) !important;
+  background: rgba(255,255,255,0.06) !important;
+  color: rgb(var(--text)) !important;
+  font-weight: 800 !important;
+  height: 40px !important;
+}
+.wallet-adapter-button:hover{
+  background: rgba(255,255,255,0.10) !important;
 }
