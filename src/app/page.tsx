@@ -402,9 +402,9 @@ function DebitCard() {
                   boxShadow: "0 0 14px rgba(255,138,0,.25)",
                 }}
               />
-              <div className="text-base font-black tracking-tight" style={{ letterSpacing: "-0.02em" }}>
-                nova
-              </div>
+              <div className="text-base font-semibold tracking-tight" style={{ letterSpacing: "0.02em" }}>
+  NOVA
+</div>
             </div>
           </div>
         </div>
