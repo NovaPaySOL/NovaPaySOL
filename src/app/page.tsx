@@ -73,7 +73,7 @@ function Stat({
 /* Brand                               */
 /* ---------------------------------- */
 const BRAND = {
-  name: "NovaPay",
+  name: "NANOPay",
   tagline: "Solana-native neobank infrastructure for modern money movement",
 };
 
@@ -147,7 +147,7 @@ function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://x.com/NovaPaySOL"
+            href="https://x.com/NANOPaySOL"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btnGhost hidden sm:inline-flex"
@@ -180,7 +180,7 @@ function HeroPlusVisual() {
           </h1>
 
           <p className="muted mt-5 text-base md:text-lg leading-relaxed">
-            NovaPay delivers wallet-first access, instant settlement, and policy-driven controls—built on
+            NANOPay delivers wallet-first access, instant settlement, and policy-driven controls—built on
             Solana rails for fast, transparent money movement.
           </p>
 
@@ -341,7 +341,7 @@ function DebitCard() {
         <div className="relative">
           {/* top row */}
           <div className="flex items-start justify-between">
-            {/* Nova mark */}
+            {/* NANO mark */}
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-2xl grid place-items-center border border-white/10 bg-black/40">
                 <div
@@ -354,7 +354,7 @@ function DebitCard() {
                 />
               </div>
               <div className="leading-tight">
-                <div className="text-sm font-semibold">NovaPay</div>
+                <div className="text-sm font-semibold">NANOPay</div>
                 <div className="muted text-xs">Debit</div>
               </div>
             </div>
@@ -389,10 +389,10 @@ function DebitCard() {
           <div className="mt-8 flex items-end justify-between">
             <div>
               <div className="muted text-[11px]">Cardholder</div>
-              <div className="text-sm font-semibold tracking-wide">NOVA PAY</div>
+              <div className="text-sm font-semibold tracking-wide">NANO PAY</div>
             </div>
 
-            {/* bottom-right "nova" mark */}
+            {/* bottom-right "NANO" mark */}
             <div className="flex items-center gap-2">
               <div
                 className="h-3 w-3 rounded-full"
@@ -403,14 +403,14 @@ function DebitCard() {
                 }}
               />
               <div className="text-base font-semibold tracking-tight" style={{ letterSpacing: "0.02em" }}>
-  NOVA
+  NANO
 </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="muted mt-3 text-xs text-center">NovaPay Debit — settlement on Solana rails.</div>
+      <div className="muted mt-3 text-xs text-center">NANOPay Debit — settlement on Solana rails.</div>
     </div>
   );
 }
@@ -473,7 +473,7 @@ function Product() {
     },
     {
       title: "Wallet-native access",
-      body: "Users authenticate with industry-standard Solana wallets. NovaPay never takes custody of private keys.",
+      body: "Users authenticate with industry-standard Solana wallets. NANOPay never takes custody of private keys.",
       icon: "🔐",
     },
     {
@@ -536,7 +536,7 @@ function HowItWorks() {
   const steps = [
     {
       title: "Connect wallet",
-      body: "Authenticate using Phantom or Solflare. NovaPay remains non-custodial—your keys stay with you.",
+      body: "Authenticate using Phantom or Solflare. NANOPay remains non-custodial—your keys stay with you.",
     },
     {
       title: "Route payments",
@@ -656,7 +656,7 @@ function FlowDiagram() {
           stroke="rgba(255,255,255,0.10)"
         />
         <text x="295" y="95" fill="rgba(255,255,255,0.90)" fontSize="18" fontWeight="600">
-          NovaPay Router
+          NANOPay Router
         </text>
         <text x="295" y="125" fill="rgba(255,255,255,0.65)" fontSize="13">
           Policy • Limits • Controls
@@ -837,7 +837,7 @@ function MockCards() {
           }}
         />
         <div className="relative">
-          <div className="muted text-xs">NovaPay Card</div>
+          <div className="muted text-xs">NANOPay Card</div>
           <div className="mt-2 text-xl font-semibold">**** 4027</div>
           <div className="mt-6 flex items-center justify-between">
             <div className="muted text-xs">Limits</div>
@@ -917,7 +917,7 @@ function Dashboard() {
     <section id="dashboard" className="containerX mt-24">
       <SectionTitle
         eyebrow="Dashboard"
-        title="Your NovaPay account"
+        title="Your NANOPay account"
         subtitle="Real-time, read-only account data sourced directly from Solana Mainnet."
       />
 
@@ -1007,7 +1007,7 @@ function Security() {
         <div className="card p-6">
           <div className="text-sm font-semibold">Non-custodial architecture</div>
           <p className="muted mt-2 text-sm leading-relaxed">
-            Users maintain full control of funds. NovaPay never accesses private keys and never assumes custody.
+            Users maintain full control of funds. NANOPay never accesses private keys and never assumes custody.
           </p>
           <ul className="muted mt-4 space-y-2 text-sm">
             <li>• Wallet-native authentication</li>
@@ -1038,19 +1038,19 @@ function Security() {
 function FAQ() {
   const items = [
     {
-      q: "Is NovaPay live?",
-      a: "NovaPay is live on Solana Mainnet with wallet-native access and a real-time account dashboard.",
+      q: "Is NANOPay live?",
+      a: "NANOPay is live on Solana Mainnet with wallet-native access and a real-time account dashboard.",
     },
     {
-      q: "Does NovaPay hold my funds?",
-      a: "No. NovaPay is non-custodial. Funds remain in your connected Solana wallet.",
+      q: "Does NANOPay hold my funds?",
+      a: "No. NANOPay is non-custodial. Funds remain in your connected Solana wallet.",
     },
     {
       q: "What wallets are supported?",
       a: "Phantom and Solflare are supported by default, with additional wallet adapters available as needed.",
     },
     {
-      q: "What is NovaPay built for?",
+      q: "What is NANOPay built for?",
       a: "Modern payments, settlement, and financial UX designed for the on-chain economy.",
     },
   ];
@@ -1082,7 +1082,7 @@ function Footer() {
   return (
     <section className="containerX mt-24 pb-16">
       <div className="card p-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="muted text-sm">© {new Date().getFullYear()} NovaPay. All rights reserved.</div>
+        <div className="muted text-sm">© {new Date().getFullYear()} NANOPay. All rights reserved.</div>
         <div className="flex gap-4 text-sm muted">
           <a className="hover:text-white" href="#">
             Privacy

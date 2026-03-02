@@ -2,8 +2,8 @@ import "./globals.css";
 import Providers from "./providers";
 
 export const metadata = {
-  title: "NovaPay // Solana Neobank",
-  description: "Solana-native neobank landing + wallet connect",
+  title: "NANOPay",
+  description: "Payments with Solana",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
